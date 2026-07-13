@@ -1,0 +1,19 @@
+# Binaries and build output
+*.exe
+*.out
+/bin/
+/dist/
+
+# Test & coverage
+*.test
+coverage.out
+coverage.txt
+
+# Go workspace
+go.work
+go.work.sum
+
+# Env & local
+.env
+.env.*
+.DS_Store

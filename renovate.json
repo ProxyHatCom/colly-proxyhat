@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":semanticCommits"],
+  "labels": ["dependencies"],
+  "schedule": ["before 6am on monday"],
+  "packageRules": [
+    {
+      "description": "Auto-merge Go module bumps once CI (incl. compat) is green.",
+      "matchManagers": ["gomod"],
+      "automerge": true,
+      "automergeType": "pr"
+    },
+    {
+      "description": "Track Colly but never auto-merge a major bump silently.",
+      "matchManagers": ["gomod"],
+      "matchPackageNames": ["github.com/gocolly/colly/v2"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    }
+  ]
+}
