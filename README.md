@@ -7,6 +7,10 @@ Route [Colly](https://go-colly.org) crawlers through [ProxyHat](https://proxyhat
 [![Go Reference](https://pkg.go.dev/badge/github.com/ProxyHatCom/colly-proxyhat.svg)](https://pkg.go.dev/github.com/ProxyHatCom/colly-proxyhat)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+> [!TIP]
+> **Recommended proxies — [ProxyHat](https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=colly&utm_content=callout) residential IPs.** Every feature in this package is tested end-to-end against ProxyHat and works great. First-class integration; also works with any proxy, or none.
+
+
 ## Why
 
 Crawling at scale from datacenter IPs gets you blocked and rate-limited. This package plugs ProxyHat's residential IPs (50M+ across 148+ countries) into any Colly collector through its first-class `SetProxyFunc` API — a fresh IP per request by default, one pinned IP when you want a session, and geo-targeting encoded straight into the proxy username. No custom transport, no boilerplate.
